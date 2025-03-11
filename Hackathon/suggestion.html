@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm.Ai | Framefarm</title>
+    <link rel="stylesheet" href="/suggestionstyle.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1 id="name">Farm.Ai</h1>
+        <nav>
+            <div id="navList">
+                <ul>
+                    <a href="/index.html" id="pageLinks"><li class="navOpts">Home</li></a>
+                    <a href="/farmwiki.html" id="pageLinks"><li class="navOpts">Farmwiki</li></a>
+                    <a href="/suggestion.html" id="pageLinks"><li class="navOpts" id="active">Framefarm</li></a>
+                    <a href="/aboutus.html" id="pageLinks"><li class="navOpts">About Us</li></a>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="inputBox">
+
+            <label for="crops">Type of Crops:</label>
+            <select name="cropsType" id="types" class="options">
+                <option value="select">Select</option>
+                <option value="crops">Crops</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetable">Vegetable</option>
+            </select>
+
+            <label for="state">State:</label>
+            <select name="state" id="states" class="options">
+                <option value="select">Select</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Andra Pradesh">Andra Pradesh</option>
+                <option value="Telengana">Telengana</option>
+            </select>
+
+            <label for="soil">Soil:</label>
+            <select name="soil" id="soils" class="options">
+                <option value="select">Select</option>
+                <option value="Red Soil">Red Soil</option>
+                <option value="Black Soil">Black Soil</option>
+                <option value="Clay Soil">Clay Soil</option>
+            </select>
+
+        </div>
+
+        <button onclick="typeSearch()" id="submitBtn">Submit</button>
+
+        <div id="dashboard">
+
+            <div id="suggestion">
+                <h1>Crop Suggestion:</h1>
+                <p id="sug"></p>
+            </div>
+
+            <div id="practices">
+                <h1>Cultivation Practices:</h1>
+                <p id="prac"></p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footerSec">
+        <h1 id="footName">Farm.Ai</h1>
+        <p id="guide"><a href="">Guide</a></p>
+        <p id="contactUs"><a href="">Contact Us</a></p>
+    </footer>
+    
+    <script src="suggestionjs.js"></script>
+
+</body>
+</html>
