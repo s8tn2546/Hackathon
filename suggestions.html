@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAI - Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>FarmAI</h1>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farmwiki.html">Farmwiki</a></li>
+            <li><a href="suggestions.html" class="active">Suggestions</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-section">
+        <h2>AI Suggestions</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Crop Planning</h3>
+                <p>Get AI-powered recommendations for optimal crop selection based on your soil and climate.</p>
+            </div>
+            <div class="box">
+                <h3>Resource Management</h3>
+                <p>Smart suggestions for water, fertilizer, and pesticide usage.</p>
+            </div>
+            <div class="box">
+                <h3>Yield Optimization</h3>
+                <p>Data-driven insights to maximize your farm's productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 
