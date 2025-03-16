@@ -129,7 +129,7 @@ async function typeSearch() {
 }
 
 function map(districtMap,states){
-    districtMap.src = `/OdishaMap/${states}.png`;
+    districtMap.src = `OdishaMap/${states}.png`;
 }
 
 
